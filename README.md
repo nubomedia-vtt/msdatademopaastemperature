@@ -1,7 +1,7 @@
 # msdatademopaastemperature
 
 This project is part of NUBOMEDIA
-`www.nubomedia.eu <http://www.nubomedia.eu>`__
+http://www.nubomedia.eu/
 
 **Compile**
 
