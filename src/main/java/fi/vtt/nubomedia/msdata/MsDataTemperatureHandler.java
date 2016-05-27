@@ -142,6 +142,13 @@ public class MsDataTemperatureHandler extends TextWebSocketHandler {
 
     } catch (Throwable t) {
       sendError(session, t.getMessage());
+
+	  UserSession user = users.remove(session.getId());
+	  if (user != null) {
+	      user.release();
+	  }
+
+
     }
   }
 
