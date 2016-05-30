@@ -34,18 +34,19 @@ import org.springframework.web.socket.config.annotation.WebSocketHandlerRegistry
 @EnableWebSocket
 public class MsDataTemperatureApp implements WebSocketConfigurer {
 
+    /*
   static final String DEFAULT_APP_SERVER_URL = "https://localhost:8443";
-
+    */
   @Bean
   public MsDataTemperatureHandler handler() {
     return new MsDataTemperatureHandler();
   }
-
+    /*
   @Bean
   public KurentoClient kurentoClient() {
     return KurentoClient.create();
   }
-
+    */
   @Override
   public void registerWebSocketHandlers(WebSocketHandlerRegistry registry) {
     registry.addHandler(handler(), "/showdatachannel");
